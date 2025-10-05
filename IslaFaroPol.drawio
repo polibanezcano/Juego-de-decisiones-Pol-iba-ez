@@ -1,0 +1,195 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Isla del Faro (sin colores)">
+    <mxGraphModel dx="1920" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+      <mxCell id="2" value="INICIO" style="shape=ellipse;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="530" y="40" width="120" height="50" as="geometry"/>
+      </mxCell>
+      <mxCell id="3" value="DECLARAR VARIABLES" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="470" y="110" width="240" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="4" value="Estás en la cala y encuentras un MAPA" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="430" y="190" width="320" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="5" value="Decisión 0:
+¿Guardar el mapa o dejarlo?" style="shape=rhombus;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="470" y="270" width="240" height="80" as="geometry"/>
+      </mxCell>
+      <mxCell id="6" value="Bifurcación: RUINAS / FARO" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="470" y="370" width="240" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="7" value="Decisión 1:
+¿Entrar en RUINAS o subir al FARO?" style="shape=rhombus;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="470" y="450" width="240" height="80" as="geometry"/>
+      </mxCell>
+      <mxCell id="8" value="Entrar en RUINAS" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="180" y="540" width="240" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="9" value="Decisión 2 (Ruinas):
+¿Pedestal o Pasarela?" style="shape=rhombus;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="180" y="620" width="240" height="80" as="geometry"/>
+      </mxCell>
+      <mxCell id="10" value="Zona del pedestal" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="60" y="720" width="180" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="11" value="Zona de la pasarela" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="280" y="720" width="180" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="12" value="Decisión 3:
+¿Girar anillo o pulsar símbolo?" style="shape=rhombus;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="60" y="800" width="180" height="80" as="geometry"/>
+      </mxCell>
+      <mxCell id="13" value="Decisión 3:
+¿Palanca o reptar?" style="shape=rhombus;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="280" y="800" width="180" height="80" as="geometry"/>
+      </mxCell>
+      <mxCell id="14" value="Final feliz:
+Cámara segura con reliquias" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="20" y="900" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="15" value="Final trágico:
+Trampa de gas" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="20" y="980" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="16" value="Final feliz:
+Puerta lateral al embarcadero" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="260" y="900" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="17" value="Final trágico:
+Sala sellada, escapas horas después" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="260" y="980" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="18" value="Subir hacia el FARO" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="760" y="540" width="240" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="19" value="Decisión 2 (Faro):
+¿Cabaña o Atajo?" style="shape=rhombus;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="760" y="620" width="240" height="80" as="geometry"/>
+      </mxCell>
+      <mxCell id="20" value="Cabaña guardacostas" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="640" y="720" width="180" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="21" value="Atajo por la ladera" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="860" y="720" width="180" height="60" as="geometry"/>
+      </mxCell>
+      <mxCell id="22" value="Decisión 3:
+¿Linterna o leer cuaderno?" style="shape=rhombus;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="640" y="800" width="180" height="80" as="geometry"/>
+      </mxCell>
+      <mxCell id="23" value="Decisión 3:
+¿Escalar o cornisa?" style="shape=rhombus;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="860" y="800" width="180" height="80" as="geometry"/>
+      </mxCell>
+      <mxCell id="24" value="Final feliz:
+Señal correcta, faro reactivado" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="600" y="900" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="25" value="Final neutro:
+Señal desfasada, nadie responde" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="600" y="980" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="26" value="Final trágico:
+Tormenta te obliga a refugiarte" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="600" y="1060" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="27" value="Final feliz:
+Entrada segura al faro" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="840" y="900" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="28" value="Final trágico:
+Piedra cede, abandonas la subida" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="840" y="980" width="220" height="70" as="geometry"/>
+      </mxCell>
+      <mxCell id="29" value="Final neutro:
+Esperas y pierdes la ventana de rescate" style="shape=rectangle;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="840" y="1060" width="220" height="70" as="geometry"/>
+      </mxCell>
+        
+      <mxCell id="30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="3" target="4">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="4" target="5">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="33" value="Guardar o dejar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="5" target="6">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="6" target="7">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="35" value="RUINAS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="7" target="8">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="36" value="FARO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="7" target="18">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="8" target="9">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="38" value="Pedestal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="9" target="10">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="39" value="Pasarela" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="9" target="11">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="10" target="12">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="11" target="13">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="42" value="Con mapa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="12" target="14">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="43" value="Sin mapa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="12" target="15">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="44" value="Con mapa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="13" target="16">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="45" value="Sin mapa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="13" target="17">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="18" target="19">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="47" value="Cabaña" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="19" target="20">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="48" value="Atajo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="19" target="21">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="20" target="22">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="21" target="23">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="51" value="Con mapa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="22" target="24">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="52" value="Sin mapa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="22" target="25">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="53" value="Leer demasiado" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="22" target="26">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="54" value="Con mapa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="23" target="27">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="55" value="Sin mapa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="23" target="28">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      <mxCell id="56" value="Esperar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="23" target="29">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
