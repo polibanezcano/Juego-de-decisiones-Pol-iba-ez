@@ -5,10 +5,10 @@ public class P02HistoriaPIC {
         Scanner sc = new Scanner(System.in);
 
         // Resumen de decisiones
-        String d0 = "";
-        String d1 = "";
-        String d2 = "";
-        String d3 = "";
+        String mapa = "";
+        String entroruina = "";
+        String pedestal = "";
+        String anillo = "";
         String finalHistoria = "";
 
         // Estado
@@ -28,10 +28,10 @@ public class P02HistoriaPIC {
         int op0 = sc.nextInt();
         if (op0 == 1) {
             tienesMapa = true;
-            d0 = "Has guardado el mapa.";
+            mapa = "Has guardado el mapa.";
         } else {
             tienesMapa = false;
-            d0 = "Has dejado el mapa.";
+            mapa = "Has dejado el mapa.";
         }
         System.out.println();
 
@@ -48,10 +48,10 @@ public class P02HistoriaPIC {
         int op1 = sc.nextInt();
         if (op1 == 1) {
             entroRuinas = true;
-            d1 = "Has entrado en las ruinas.";
+            entroruina = "Has entrado en las ruinas.";
         } else {
             entroRuinas = false;
-            d1 = "Has subido hacia el faro.";
+            entroruina = "Has subido hacia el faro.";
         }
         System.out.println();
 
@@ -68,7 +68,7 @@ public class P02HistoriaPIC {
             System.out.print("Elige (1-2): ");
             int op2 = sc.nextInt();
             if (op2 == 1) {
-                d2 = "Has examinado el pedestal.";
+                pedestal = "Has examinado el pedestal.";
                 System.out.println();
                 System.out.println("El pedestal tiene un relieve que coincide con el mapa del faro.");
                 System.out.println("Una compuerta se entreabre mostrando un mecanismo con dos opciones.");
@@ -81,7 +81,7 @@ public class P02HistoriaPIC {
                 System.out.print("Elige (1-2): ");
                 int op3 = sc.nextInt();
                 if (op3 == 1) {
-                    d3 = "Has girado el anillo exterior.";
+                    anillo = "Has girado el anillo exterior.";
                     // Final depende de tener mapa (condición compuesta ejemplo con &&)
                     if (tienesMapa && entroRuinas) {
                         finalHistoria = "FINAL ARQUEÓLOGO: Alineas el anillo según el mapa y revelas una cripta con reliquias.";
@@ -89,7 +89,7 @@ public class P02HistoriaPIC {
                         finalHistoria = "FINAL TRAMPA: Sin las marcas del mapa, activas un gas soporífero y despiertas fuera de las ruinas.";
                     }
                 } else {
-                    d3 = "Has presionado el símbolo central.";
+                    anillo = "Has presionado el símbolo central.";
                     if (tienesMapa && entroRuinas) {
                         finalHistoria = "FINAL PASAJE SECRETO: El símbolo abre un corredor a un mirador seguro hacia el faro.";
                     } else {
@@ -97,7 +97,7 @@ public class P02HistoriaPIC {
                     }
                 }
             } else {
-                d2 = "Has cruzado por la pasarela a la sala oscura.";
+                pedestal = "Has cruzado por la pasarela a la sala oscura.";
                 System.out.println();
                 System.out.println("La sala oscura resuena con viento. Notas corrientes de aire detrás de una pared.");
                 System.out.println("Hay una PALANCA y un HUECO estrecho por el que podrías reptar.");
@@ -110,14 +110,14 @@ public class P02HistoriaPIC {
                 System.out.print("Elige (1-2): ");
                 int op3 = sc.nextInt();
                 if (op3 == 1) {
-                    d3 = "Has accionado la palanca.";
+                    pedestal = "Has accionado la palanca.";
                     if (tienesMapa && entroRuinas) {
                         finalHistoria = "FINAL MECANISMO ANTIGUO: Abres una puerta lateral que conecta con un embarcadero seguro.";
                     } else {
                         finalHistoria = "FINAL ATRAPADO: La sala se sella y solo consigues salir horas después, exhausto.";
                     }
                 } else {
-                    d3 = "Has reptado por el hueco.";
+                    anillo = "Has reptado por el hueco.";
                     if (tienesMapa && entroRuinas) {
                         finalHistoria = "FINAL ESCAPE SUTIL: El hueco da a un túnel de servicio marcado también en el mapa.";
                     } else {
@@ -138,11 +138,23 @@ public class P02HistoriaPIC {
             System.out.print("Elige (1-2): ");
             int op2 = sc.nextInt();
             if (op2 == 1) {
-                d2 = "Has investigado la cabaña.";
+                entroruina = "Has investigado la cabaña.";
                 System.out.println();
                 System.out.println("Dentro hay herramientas, una linterna y un cuaderno con anotaciones del faro.");
                 System.out.println("El cuaderno menciona una 'señal' que solo se interpreta con un buen mapa.");
                 System.out.println();
+
+                System.out.println("Decision 4 (Linterna).");
+                System.out.println("1 coges lintena");
+                String linterna = sc.next();
+                if (linterna.equals("Si")){
+
+                }
+                else
+                {
+
+                }
+           
 
                 // DECISIÓN 3 en FARO-CABAÑA: Linterna o Cuaderno
                 System.out.println("Decisión 3 (Faro-Cabaña):");
@@ -151,14 +163,14 @@ public class P02HistoriaPIC {
                 System.out.print("Elige (1-2): ");
                 int op3 = sc.nextInt();
                 if (op3 == 1) {
-                    d3 = "Has llevado la linterna y has subido.";
+                    anillo = "Has llevado la linterna y has subido.";
                     if (tienesMapa && !entroRuinas) {
                         finalHistoria = "FINAL GUARDIÁN DEL FARO: Con mapa y luz descifras la señal y reactivas el faro.";
                     } else {
                         finalHistoria = "FINAL FARO A MEDIAS: Logras encenderlo, pero sin mapa la señal queda desfasada.";
                     }
                 } else {
-                    d3 = "Te has quedado revisando el cuaderno.";
+                    anillo = "Te has quedado revisando el cuaderno.";
                     if (tienesMapa && !entroRuinas) {
                         finalHistoria = "FINAL MENSAJE COMPLETO: Mapa y notas te permiten emitir una llamada de auxilio perfecta.";
                     } else {
@@ -166,7 +178,7 @@ public class P02HistoriaPIC {
                     }
                 }
             } else {
-                d2 = "Has tomado el atajo por la ladera.";
+                pedestal = "Has tomado el atajo por la ladera.";
                 System.out.println();
                 System.out.println("El atajo es empinado y resbaladizo. Oyes bocinas a lo lejos: se acerca una tormenta.");
                 System.out.println("Puedes ESCALAR con cuidado o rodear por una CORNISA estrecha.");
@@ -179,14 +191,14 @@ public class P02HistoriaPIC {
                 System.out.print("Elige (1-2): ");
                 int op3 = sc.nextInt();
                 if (op3 == 1) {
-                    d3 = "Has escalado con cuidado.";
+                    anillo = "Has escalado con cuidado.";
                     if (tienesMapa && !entroRuinas) {
                         finalHistoria = "FINAL CIMA CARTOGRAFÍADA: Sigues marcas del mapa y alcanzas una entrada segura al faro.";
                     } else {
                         finalHistoria = "FINAL RESBALÓN: Una piedra cede; consigues salvarte, pero abandonas la subida.";
                     }
                 } else {
-                    d3 = "Has rodeado por la cornisa.";
+                    anillo = "Has rodeado por la cornisa.";
                     if (tienesMapa && !entroRuinas) {
                         finalHistoria = "FINAL RUTA OCULTA: El mapa te guía por marcas antiguas hasta una puerta lateral del faro.";
                     } else {
@@ -199,10 +211,10 @@ public class P02HistoriaPIC {
         // Resumen final
         System.out.println();
         System.out.println("=== RESUMEN DE TUS DECISIONES ===");
-        System.out.println("Decisión 0: " + d0);
-        System.out.println("Decisión 1: " + d1);
-        System.out.println("Decisión 2: " + d2);
-        System.out.println("Decisión 3: " + d3);
+        System.out.println("Decisión 0: " + mapa);
+        System.out.println("Decisión 1: " + entroruina);
+        System.out.println("Decisión 2: " + pedestal);
+        System.out.println("Decisión 3: " + anillo);
         System.out.println("---------------------------------");
         System.out.println(finalHistoria);
         System.out.println("Gracias por jugar.");
